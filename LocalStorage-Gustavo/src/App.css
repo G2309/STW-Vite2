@@ -1,0 +1,26 @@
+#root{
+	width:100vw;
+	height:100vh;
+	text-align:center;
+	padding: 16px;
+}
+
+.app {
+	display:block;
+	width:100vw;
+	height:100vh;
+	align-items:center;
+	justify-content:center;
+}
+
+.header-app {
+	gap: 8px;
+	border-radius: 20px;
+	width: 40%;
+	height: 20%;
+	align-items:center;
+	justify-content:center;
+	padding:18px;
+	display:inline-flex;
+	border: 2px solid black;
+}
