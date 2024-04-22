@@ -1,21 +1,19 @@
-import Task from './Task'
-import TaskList from './TaskList'
+import React from 'react';
+import PropTypes from 'prop-types';
+import TaskApp from './TaskApp';
 
-function Router ({ruta}) {
-	
-	switch (ruta){
-		case "/task":
-			return <Task></Task>
-		case "/task-list":
-			return <TaskList></TaskList>
-		default :
-			return (
-				<div>
-					<h1>Bienvenido</h1>
-					<p>Selecciona alguno de los botones para comenzar</p>
-				</div>
-			)
-	}
-}
+const Router = ({ruta}) => {
+	return (
+		<div>
+			<h1>Bienvenido</h1>
+			<p>Selecciona alguno de los botones para comenzar</p>
+			<TaskApp ruta={ruta}/>
+		</div>
+		)
+};
 
-export default Router
+Router.propTypes = {
+	ruta: PropTypes.string.isRequired
+};
+
+export default Router;
